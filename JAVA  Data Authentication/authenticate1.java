@@ -8,16 +8,14 @@ public class Blockchain_Based_Voting_System {
         int[] aadhar = {7, 14, 18, 30};
         
         System.out.println("........BLOCKCHAIN BASED VOTING SYSTEM........\n\n");
-        System.out.println("Submitted by:                        Submitted to:\n.........................            .........................\nAshish Kumar\nAditya Pandey\nFarhan Ahmad\nMohammad Azharuddin");
+        System.out.println("Submitted by:                        Submitted to:\n.........................            .........................\nAshish Kumar                         Mr. Abhishek Tripathi\nAditya Pandey\nFarhan Ahmad\nMohammad Azharuddin\n\n");
        
-
-        // Display existing Aadhar numbers
-        System.out.println("Existing Aadhar Numbers: " + Arrays.toString(aadhar));
 
         // Ask the user if they want to add the new Aadhar
         System.out.println("Please, Enter your Aadhar No: ");
         int data1 = sc.nextInt();
         sc.nextLine(); // Consume the newline character left by nextInt()
+        
 
         // checkAadhar
         boolean isAadharMatched = false;
@@ -26,6 +24,11 @@ public class Blockchain_Based_Voting_System {
                 isAadharMatched = true;
                 break; // No need to continue checking once a match is found
             }
+        }
+        switch(data1){
+        case 786:   // Display existing Aadhar numbers
+        System.out.println("Existing Aadhar Numbers: " + Arrays.toString(aadhar));
+break;
         }
 
         if (isAadharMatched) {
